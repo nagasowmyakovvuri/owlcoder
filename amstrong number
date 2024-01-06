@@ -1,0 +1,10 @@
+n=int(input())
+p=0
+d=n
+while(n):
+    p+=pow(n%10,3)
+    n=n//10;
+if(d==p):
+    print("Yes")
+else:
+    print('No')
