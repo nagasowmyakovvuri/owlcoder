@@ -3,7 +3,7 @@
 // Online C++ compiler to run C++ program online
 #include<bits/stdc++.h>
 using namespace std;
-//int mod=1e9+7;
+int mod=1e9+7;
 int Be(int a,int b)
 {
     int ans=1;
@@ -22,7 +22,7 @@ int Be(int a,int b)
 	}
 	return ans;
 }
-int inverse(int b,int mod)
+int inverse(int b)
 {
     int x=Be(b,mod-2);
     return x;
@@ -35,6 +35,6 @@ int main()
 	cout<<Be(a,b)<<endl;
 	
 	//return 0;	
-	cout<<inverse(b,5);
+	cout<<inverse(b);
 	
 }
